@@ -6,12 +6,7 @@ I am using zookeeper docker setup
 
 Start Zookeeper  with below command
 ``
-docker run --name some-zookeeper --restart always -d zookeeper
-``
-
-Enter into terminal of zookeeper
-``
-docker run -it --rm --link some-zookeeper:zookeeper zookeeper zkCli.sh -server zookeeper
+docker run --name some-zookeeper --restart always -d zookeeper -p 2181:2181
 ``
 
 make a code build and run as multiple instances, shutdown one node and check behaviour# distributed-system-implementation
